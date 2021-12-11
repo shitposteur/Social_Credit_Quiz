@@ -16,7 +16,7 @@ let answered = 0;
 
 let tmpClass;
 let x;
-let imgPath = "./../assets/img/rewards/"
+let imgPath = "assets/img/rewards/"
 
 
 poohSelect.addEventListener('click', () => {
@@ -29,7 +29,7 @@ function updateContents() {
   if (answered == totQuestions) {
     localStorage.setItem('finalScore', scoreCount);
     setTimeout (() => {
-      window.location.href = "./../pages/call.html";
+      window.location.href = "pages/call.html";
     },2400);
   }
   x = document.getElementsByClassName(tmpClass);
