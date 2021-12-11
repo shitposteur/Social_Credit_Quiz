@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./../styles/style_call.css">
+</head>
+<body>
+
+  <div class="landing-page">
+    <p>
+      Sir, you've finished the quiz.<br>
+      Waiting for the result.
+    </p>
+    <button id="next">Next >></button>
+  </div>
+  <div class="result">
+    <img src="./../assets/img/rewards/executn.png">
+  </div>
+
+  <div class="call">
+    <div class="call-header">
+      <div class="incoming-call">INCOMING CALL</div>
+      <div class="sc-dept">SOCIAL CREDITS DEPARTMENT</div>
+    </div>
+    <div class="image">
+      <img src="./../assets/img/page_images/zohn-xina.png">
+    </div>
+    <div class="buttons">
+      <div class="arbutton reject">
+        <span class="material-icons button">call_end</span>
+      </div>
+      <div class="arbutton accept">
+        <span class="material-icons button">phone_enabled</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="audios">
+    <audio controls loop id="ringtone">
+      <source src="./../assets/sounds/ringtone/Red_Sun_In_The_Sky.mp3">
+    </audio>
+
+    <audio controls id="siren">
+      <source src="./../assets/sounds/rewards/minuXXXXSociaCredit.mp3">
+    </audio>
+  </div>
+
+  <script src="./../scripts/script_call.js"></script>
+</body>
+</html>

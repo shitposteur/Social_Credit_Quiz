@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second Chance</title>
+</head>
+<body>
+  <div>
+    <p>
+      Sorry citizen, you don't have enough social credit.<br>
+      Your current social credit is <span id="crdScore"></span><br>
+    </p>
+    <p>
+      Anyway, you have another chance to redeem yourself.
+    </p>
+    <p>
+      Go for re-education ?
+    </p>
+    <button id="yes">Yes</button>
+    <button id="no">No</button>
+  </div>
+
+  <script>
+    const score = localStorage.getItem('finalScore');
+    const scoreDisplay = document.querySelector('#crdScore');
+    const noButton = document.querySelector('#no');
+    const yesButton = document.querySelector('#yes');
+
+    scoreDisplay.innerHTML = score;
+
+    noButton.addEventListener('click', () => {
+      window.location.href = 'fail.html';
+    });
+
+    yesButton.addEventListener('click', () => {
+      window.location.href = 'redempt.html';
+    });
+
+  </script>
+</body>
+</html>

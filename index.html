@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="banner">
+    <h1>SOCIAL CREDIT TEST</h1>
+  </div>
+
+  <header>
+    <div class="score-bar">
+      Current Social Credit: <span id="score">0</span>
+    </div>
+  </header>
+
+  <div>
+    <div>
+      <ol class="quiz-list">
+        <li class="main-list">
+          <img id="tank", src="assets/img/page_images/tiananmen-square-front.png">
+          <div class="question">
+            <h3>Did anything happen here in 1989 ?</h3>
+            <ul>
+              <li>
+                <input type="radio" name="q1" class="q-1 moyen-v">
+                <span>Nothing</span>
+              </li>
+              <li>
+                <input type="radio" name="q1" class="q-1 faux">
+                <span>Something</span>
+              </li>
+              <li>
+                <input type="radio" name="q1" class="q-1 vrai">
+                <span>I don't remember</span>
+              </li>
+              <li>
+                <input type="radio" name="q1" class="q-1 s-vrai">
+                <span>Sir, why did you post a blank image ?</span>
+              </li>    
+            </ul>
+          </div>
+        </li>
+
+        <li class="main-list">
+          <img id="tank", src="assets/img/page_images/sauce.png">
+          <div class="question">
+            <h3>What is the best sauce in the world ?</h3>
+            <ul>
+              <li>
+                <input type="radio" name="q2" class="q-2 faux">
+                <span>Oyster Sauce</span>
+              </li>
+              <li>
+                <input type="radio" name="q2" class="q-2 faux">
+                <span>Tomato Ketchup</span>
+              </li>
+              <li>
+                <input type="radio" name="q2" class="q-2 vrai">
+                <span>Lao Gan Ma</span>
+              </li>
+              <li>
+                <input type="radio" name="q2" class="q-2 faux">
+                <span>Soy Sauce</span>
+              </li>    
+            </ul>
+          </div>
+        </li>
+
+        <li class="main-list">
+          <img src="assets/img/page_images/tom-ching-cheng-hanji.gif">
+          <div class="question">
+            <h3>What is the name of this song ?</h3>
+            <ul>
+              <li>
+                <input type="radio" name="q3" class="q-3 vrai">
+                <span>Ching Cheng Hanji</span>
+              </li>
+              <li>
+                <input type="radio" name="q3" class="q-3 moyen-f">
+                <span>Super Idol</span>
+              </li>
+              <li>
+                <input type="radio" name="q3" class="q-3 faux">
+                <span>I don't remember</span>
+             </li>
+             <li>
+                <input type="radio" name="q3" class="q-3 s-faux">
+                <span>I don't listen to chinese music, sir</span>
+              </li>    
+            </ul>
+          </div>
+        </li>
+
+        <li class="main-list">
+          <img src="assets/img/page_images/xuehue.png">
+          <div class="question">
+            <h3>What is the name of this song ?</h3>
+            <ul>
+              <li>
+                <input type="radio" name="q4" class="q-4 vrai">
+                <span>Xue Heu Piao Piao</span>
+              </li>
+              <li>
+                <input type="radio" name="q4" class="q-4 moyen-f">
+                <span>Super Idol</span>
+              </li>
+              <li>
+                <input type="radio" name="q4" class="q-4 moyen-f">
+                <span>Red Sun in the Sky</span>
+              </li>
+              <li>
+                <input type="radio" name="q4" class="q-4 faux">
+                <span>I don't remember</span>
+              </li>    
+            </ul>
+          </div>
+        </li>
+
+        <li class="main-list">
+          <img src="assets/img/page_images/pooh.png" id="pooh">
+          <div class="question">
+            <h3>Do you like the cartoon Winnie the Pooh ?</h3>
+            <ul>
+              <li>
+                <input type="radio" name="q5" class="q-5 s-faux">
+                <span>Yes</span>
+              </li>
+              <li>
+                <input type="radio" name="q5" class="q-5 vrai">
+                <span>Absolutely Not</span>
+              </li>
+              <li>
+                <input type="radio" name="q5" class="q-5 moyen-v">
+                <span>I don't know that cartoon</span>
+              </li>
+              <li>
+                <input type="radio" name="q5" class="q-5 s-vrai pooh-radio-select">
+                <span>Sir, please hide the image. I'm offended</span>
+              </li>    
+            </ul>
+          </div>
+        </li>
+
+        <li class="main-list">
+          <img id="sidol" src="assets/img/page_images/superidol.png">
+          <div class="question">
+            <h3>What is his name ?</h3>
+            <ul>
+              <li>
+                <input type="radio" name="q6" class="q-6 vrai">
+                <span>Super Idol</span>
+              </li>
+              <li>
+                <input type="radio" name="q6" class="q-6 moyen-f">
+                <span>Zohn Xina</span>
+              </li>
+              <li>
+                <input type="radio" name="q6" class="q-6 faux">
+                <span>I don't know him</span>
+              </li>
+              <li>
+                <input type="radio" name="q6" class="q-6 faux">
+                <span>The Wok</span>
+              </li>    
+            </ul>
+          </div>
+        </li>
+
+        <li class="main-list">
+          <img id="one-child", src="assets/img/page_images/onechild.png">
+          <div class="question">
+            <h3>How many kids are you allowed to have ?</h3>
+            <ul>
+              <li>
+                <input type="radio" name="q7" class="q-7 faux">
+                <span>Three</span>
+              </li>
+              <li>
+                <input type="radio" name="q7" class="q-7 s-faux">
+                <span>As many as you want</span>
+              </li>
+              <li>
+                <input type="radio" name="q7" class="q-7 vrai">
+                <span>One</span>
+              </li>
+              <li>
+                <input type="radio" name="q7" class="q-7 faux">
+                <span>Ten</span>
+              </li>  
+            </ul>
+          </div>
+        </li>
+
+        <li class="main-list">
+          <img id="video-game", src="assets/img/page_images/videogame.jpg">
+          <div class="question">
+            <h3>How many hours should you play video games ?</h3>
+            <ul>
+              <li>
+                <input type="radio" name="q8" class="q-8 faux">
+                <span>Five+</span>
+              </li>
+              <li>
+                <input type="radio" name="q8" class="q-8 vrai">
+                <span>One</span>
+              </li>
+              <li>
+                <input type="radio" name="q8" class="q-8 faux">
+                <span>Three</span>
+              </li>
+              <li>
+                <input type="radio" name="q8" class="q-8 s-faux">
+                <span>As long as you want</span>
+              </li>    
+            </ul>
+          </div>
+        </li>                
+      </ol>
+    </div>
+  </div>
+  <div class="result">
+    <img src="" alt="" class="result-image">
+  </div>
+    
+  <script src="scripts/script.js"></script>
+</body>
+</html>
